@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --color-v-navy: #071A3A;
+  --color-v-royal-navy: #102C59;
+  --color-v-gold: #D89A18;
+  --color-v-bright-gold: #F5C542;
+  --color-v-cream: #FCFAF5;
+  --color-v-soft-cream: #F5EFE2;
+  --color-v-text: #18243A;
+  --color-v-muted: #647084;
+  --color-v-glass-border: rgba(255, 255, 255, 0.4);
+
+  --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+
+  --radius-card: 20px;
+}
+
+:root {
+  --navy: #071A3A;
+  --royal-navy: #102C59;
+  --gold: #D89A18;
+  --bright-gold: #F5C542;
+  --cream: #FCFAF5;
+  --soft-cream: #F5EFE2;
+  --text: #18243A;
+  --muted: #647084;
+}
+
+/* Custom Glassmorphism Utility Classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 30px -5px rgba(7, 26, 58, 0.05);
+}
+
+.glass-panel-dark {
+  background: rgba(7, 26, 58, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(216, 154, 24, 0.2);
+  box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.3);
+}
+
+.glass-navbar {
+  background: rgba(252, 250, 245, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(216, 154, 24, 0.15);
+  box-shadow: 0 4px 20px rgba(7, 26, 58, 0.04);
+}
+
+/* Chess pattern background subtle utility */
+.bg-chess-grid {
+  background-image: radial-gradient(rgba(216, 154, 24, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-chess-board-subtle {
+  background-color: #FCFAF5;
+  background-image: 
+    linear-gradient(45deg, rgba(245, 239, 226, 0.6) 25%, transparent 25%), 
+    linear-gradient(-45deg, rgba(245, 239, 226, 0.6) 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, rgba(245, 239, 226, 0.6) 75%), 
+    linear-gradient(-45deg, transparent 75%, rgba(245, 239, 226, 0.6) 75%);
+  background-size: 40px 40px;
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5EFE2;
+}
+::-webkit-scrollbar-thumb {
+  background: #D89A18;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #102C59;
+}
